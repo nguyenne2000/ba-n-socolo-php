@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+
+
+import React, { Component } from 'react';
+import Header from './header/header.js';
+import Body from './body/body.js';
+import Footer from './footer/footer';
+import Dangnhap from './body/dangnhap';
+import Dangxuat from './body/dangxuat';
+import Routet from "./router/router";
+import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 function App() {
   return (
+
+   <Router>
+
+  
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Body/>
+
+    </div>  </Router>
   );
 }
 
